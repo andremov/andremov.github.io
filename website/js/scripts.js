@@ -1,0 +1,104 @@
+(function($){
+  $(function(){
+
+
+    // PARALLAX
+    $.fn.parallax = function () {
+      var window_width = $(window).width();
+      // Parallax Scripts
+      return this.each(function(i) {
+        var $this = $(this);
+        $this.addClass('parallax');
+
+        function updateParallax(initial) {
+          var container_height;
+          if (window_width < 601) {
+            container_height = ($this.height() > 0) ? $this.height() : $this.children("img").height();
+          }
+          else {
+            container_height = ($this.height() > 0) ? $this.height() : 500;
+          }
+          var $img = $this.children("img").first();
+          var img_height = $img.height();
+          var parallax_dist = img_height - container_height;
+          var bottom = $this.offset().top + container_height;
+          var top = $this.offset().top;
+          var scrollTop = $(window).scrollTop();
+          var windowHeight = window.innerHeight;
+          var windowBottom = scrollTop + windowHeight;
+          var percentScrolled = (windowBottom - top) / (container_height + windowHeight);
+          var parallax = Math.round((parallax_dist * percentScrolled));
+
+          if (initial) {
+            $img.css('display', 'block');
+          }
+          if ((bottom > scrollTop) && (top < (scrollTop + windowHeight))) {
+            $img.css('transform', "translate3D(-50%," + parallax + "px, 0)");
+          }
+
+        }
+
+        // Wait for image load
+        $this.children("img").one("load", function() {
+          updateParallax(true);
+        }).each(function() {
+          if (this.complete) $(this).trigger("load");
+        });
+
+        $(window).scroll(function() {
+          window_width = $(window).width();
+          updateParallax(false);
+        });
+
+        $(window).resize(function() {
+          window_width = $(window).width();
+          updateParallax(false);
+        });
+
+      });
+    };
+
+
+    // FILL
+		$('.ffx').on('mouseover', function() {
+      $(this).removeClass('sfx-shine');
+
+			$(this).removeClass('fx-out');
+			$(this).addClass('fx-in');
+
+			if($(this).is('.ffx')) {
+        if($(this).is('.fx-dark') || $(this).is('.fx-black')) {
+          $(this).css('color', 'white');
+		    } else {
+          $(this).css('color', 'black');
+        }
+      }
+		});
+
+		$('.ffx').on('mouseout', function() {
+      $(this).removeClass('sfx-shine');
+
+			$(this).removeClass('fx-in');
+			$(this).addClass('fx-out');
+
+			if($(this).is('.ffx')) {
+				$(this).css('color', '');
+			}
+		});
+
+    // SHINE
+    setInterval(function() {
+      $('.sfx').removeClass('fx-out');
+      if (!($('.sfx').is('.fx-in'))) {
+        $('.sfx').addClass('sfx-shine');
+        setTimeout(function() {
+          $('.sfx').removeClass('sfx-shine');
+        }, 500);
+      }
+    }, 10000);
+
+
+
+
+  });
+})(jQuery);

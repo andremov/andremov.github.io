@@ -1,0 +1,48 @@
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.description {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+.description .short {
+  font-size: 1.3rem;
+  text-align: justify;
+}
+
+.description .long {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.btn.large {
+  font-size: 2rem;
+}
+
+.gallery {
+  padding: 5px;
+  width: 60%;
+  margin:auto;
+}
+
+.gallery .item {
+  border-width: 2px;
+  border-color: black;
+  border-style: dashed;
+  display:  inline-block;
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.gallery .pic {
+  width: 200px;
+}

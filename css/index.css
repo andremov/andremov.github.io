@@ -1,64 +1,28 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
 
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-	font-size: inherit;
+.screen {
+  display: block;
+  width: 100%;
 }
 
-h3:hover {
-    text-shadow: 0px 0px 10px #FFFFFF;
+.right {
+  margin-right: 20px;
 }
 
-body {
-    background-image: url("../resources_website/sayagata black.png");
+.large {
+  font-size: 2.75vw;
 }
 
-/*
- * MAIN PALETTE
- */
+.medium {
+  font-size: 2vw;
+}
 
- /* BACK */
- .color-primary-0 { background-color: #7100D3 !important }	/* Main Primary color */
- .color-primary-1 { background-color: #951EFC !important }
- .color-primary-2 { background-color: #8C07FF !important }
- .color-primary-3 { background-color: #5600A0 !important }
- .color-primary-4 { background-color: #44007E !important }
+.body {
+  text-align: justify;
+  font-size: 1.5vw;
+}
 
- .color-secondary-1-0 { background-color: #E02218 !important }	/* Main Secondary color (1) */
- .color-secondary-1-1 { background-color: #FFBFBB !important }
- .color-secondary-1-2 { background-color: #F86760 !important }
- .color-secondary-1-3 { background-color: #A00800 !important }
- .color-secondary-1-4 { background-color: #570400 !important }
-
- .color-secondary-2-0 { background-color: #1F51CF !important }	/* Main Secondary color (2)*/
- .color-secondary-2-1 { background-color: #698ADE !important }
- .color-secondary-2-2 { background-color: #436DD5 !important }
- .color-secondary-2-3 { background-color: #0C3CB3 !important }
- .color-secondary-2-4 { background-color: #092D87 !important }
-
-/* TEXT */
-.color-text-primary-0 { color: #7100D3 !important}	/* Main Primary color */
-.color-text-primary-1 { color: #951EFC !important}
-.color-text-primary-2 { color: #8C07FF !important}
-.color-text-primary-3 { color: #5600A0 !important}
-.color-text-primary-4 { color: #44007E !important}
-
-.color-text-secondary-1-0 { color: #E02218 !important }	/* Main Secondary color (1) */
-.color-text-secondary-1-1 { color: #FFBFBB !important }
-.color-text-secondary-1-2 { color: #F86760 !important }
-.color-text-secondary-1-3 { color: #A00800 !important }
-.color-text-secondary-1-4 { color: #570400 !important }
-
-.color-text-secondary-2-0 { color: #1F51CF !important }	/* Main Secondary color (2)*/
-.color-text-secondary-2-1 { color: #698ADE !important }
-.color-text-secondary-2-2 { color: #436DD5 !important }
-.color-text-secondary-2-3 { color: #0C3CB3 !important }
-.color-text-secondary-2-4 { color: #092D87 !important }
+.split {
+  height: 20px;
+  background-image: url("../website/assets/sayagata black.png");
+  filter:brightness(2);
+}

@@ -1,0 +1,7 @@
+
+.videoback {
+  background-image: url("../assets/GIF.gif");
+  background-size: 1000px 700px;
+  background-repeat: no-repeat;
+  background-position: center;
+}

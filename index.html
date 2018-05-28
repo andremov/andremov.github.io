@@ -9,34 +9,285 @@
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="css_website/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="css_website/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="website/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="website/css/colors.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="website/css/header.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/index.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link rel="icon" href="resources_website/icon.png">
+    <link rel="icon" href="website/assets/icon.png">
   </head>
 
   <body>
 
-    <br><br>
-    <div class="center">
-      <img src="resources_website/personal logo.png" height="350" width="350">
-    </div>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="website/js/scripts.js"></script>
+    <script src="website/js/header.js"></script>
+    <script src="website/js/konami.js"></script>
+    <script src="js/index.js"></script>
 
-    <div class="section no-pad-bot" id="index-banner">
-      <div class="container">
-        <h2 class="header center color-text-primary-0">Andrés Movilla</h2>
-        <h5 class="center color-text-primary-2">Attempts are made.</h5>
+
+    <div class="header">
+      <img class="head center-on-limit2" id="h" src="website/assets/personal logo.png">
+
+      <div class="hide-on-limit1">
+        <span class="large">Andrés Movilla</span>
+      </div>
+
+      <span class="hide-on-limit1">|</span>
+      <div class="btn ffx fx-dark enlarge">
+        <a href="code">CODE</a>
+      </div>
+
+      <span class="hide-on-limit1">|</span>
+      <div class="btn ffx fx-dark enlarge">
+        <a href="gamedesign">GAME DESIGN</a>
+      </div>
+
+      <span class="hide-on-limit1">|</span>
+      <div class="btn ffx fx-dark enlarge">
+        <a href="gamedev">GAME DEV</a>
+      </div>
+
+      <span class="hide-on-limit1">|</span>
+      <div class="btn ffx fx-dark enlarge">
+        <a href="film">FILM</a>
+      </div>
+
+      <span class="hide-on-limit1">|</span>
+      <div class="btn ffx fx-dark right enlarge">
+        <a href="contact" id="k">CONTACT</a>
       </div>
     </div>
 
-    <br><br>
-    <a href="projects"><h3 class="header center white-text">Projects</h3></a>
+    <div class="screen parallax-container hide-on-limit1" style="height:680px;">
+      <div class="parallax hide-on-limit1">
+        <img src="assets/me.png" width="100%" style="top:-23%;">
+      </div>
 
+      <br><br><br><br>
+      <br>
+      <div class="block sub3 text-white right right-align hide-on-limit1" style="padding: 1%;background-color: rgb(0, 0, 0, 0.1)">
+        <div class="medium">
+          ANDRÉS MOVILLA
+        </div>
+        <br>
+        <div class="body">
+          Systems Engineering student at Universidad del Norte,
+          Barranquilla, Colombia. I'm also an indie game designer
+          and developer, under CUB3D Games. This is my personal
+          website and portfolio, with all the proyects I've
+          worked on, am working on, and plan to work on.
+        </div>
+      </div>
 
-      <!--  Scripts-->
-      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script src="js/materialize.js"></script>
-      <script src="js/init.js"></script>
+    </div>
+
+    <div class="split"></div>
+
+    <div class="screen black text-white" style="height:340px;">
+      <br>
+      <div class="large center">
+        <span class="">CODE</span>
+      </div>
+      <br><br>
+
+      <div class="block sub4 center center-on-max">
+        <i class="material-icons large">code</i>
+      </div>
+      <div class="block sub4 center hide-on-limit1">
+        <img src="website/assets/github_logo_white.png" width="50%"><p>
+        <a href="https://github.com/andremov" class="btn ffx fx-white enlarge sfx">
+          <span class="medium">GITHUB PROFILE</span>
+        </a>
+      </div>
+      <div class="block sub4 center hide-on-limit1">
+        <div style="background-color: rgb(255, 255, 255, 0.5);padding:5%;">
+          <div class="crop" style="height: 150px; overflow: hidden;">
+            <img src="assets/codeproj.png" style="width: 300px; height: 300px; margin: -22px 0 0 -15px;">
+          </div>
+        </div>
+      </div>
+      <div class="block sub4 center hide-on-limit1">
+        <div class="block s1 center">
+          Five years of experience programming as a whole.
+        </div>
+        <br><br>
+        <div class="block sub1 center">
+          Lua  - 5 years.
+        </div>
+        <p>
+        <div class="block sub1 center">
+          Java  - 2 years.
+        </div>
+        <p>
+        <div class="block sub1 center">
+          C++, C# - 1 year.
+        </div>
+        <p>
+        <div class="block sub1 center">
+          JavaScript, JQuery, CSS, HTML - 1 year.
+        </div>
+
+      </div>
+    </div>
+
+    <div class="split"></div>
+
+    <div class="screen" style="height:340px;">
+      <br>
+      <div class="large center">
+        <span class="">GAME DESIGN</span>
+      </div>
+      <br><br>
+
+      <div class="block sub4 center center-on-max">
+        <i class="material-icons large">create</i>
+      </div>
+      <div class="block sub4 center hide-on-limit1">
+        <div class="crop" style="background-color: rgb(220,220,220);padding:5%;">
+            <img src="assets/designproj1.png" width="76%">
+        </div>
+      </div>
+      <div class="block sub4 center hide-on-limit1">
+        <div style="background-color: rgb(220,220,220);padding:5%;">
+          <a href="https://globalgamejam.org/2018/games/nabu">
+            <img src="assets/designproj2.png" width="80%" class="enlarge">
+          </a>
+        </div>
+      </div>
+      <div class="block sub4 center hide-on-limit1">
+        Approximately one year of game design experience.
+      </div>
+    </div>
+
+    <div class="split"></div>
+
+    <div class="screen purple darker text-white" style="height:340px;">
+      <br>
+      <div class="large center">
+        <span class="">GAME DEV</span>
+      </div>
+      <br><br>
+
+      <div class="block sub4 center center-on-max">
+        <i class="material-icons large" style="margin-left: 90px;">videogame_assets</i>
+      </div>
+      <div class="block sub4 center hide-on-limit1">
+        <div style="background-color: rgb(0,0,0,0.5);padding:7%;">
+          <a href="https://www.youtube.com/watch?v=1wNCbp7X2dQ&list=PL9U_SdcNImpARsTqrTE7xXDXPseyNwKhO">
+            <div class="crop enlarge" style="height: 150px; overflow: hidden;">
+              <img src="assets/devproj1.gif" style="width: 450px; height: 300px; margin: -70px 0 0 -10px;">
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="block sub4 center hide-on-limit1">
+        <div style="background-color: rgb(0,0,0,0.5);padding:7%;">
+          <a href="https://www.youtube.com/watch?v=Nl75QJHJl7M">
+            <div class="crop enlarge" style="height: 150px; overflow: hidden;">
+              <img src="assets/devproj2.gif" class="enlarge" style="width: 400px; height: 250px; margin: -25px 0 0 -70px;">
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="block sub4 center hide-on-limit1">
+        Five years of experience in game development.
+      </div>
+    </div>
+
+    <div class="split"></div>
+
+    <div class="screen red darker text-white" style="height:340px;">
+      <br>
+      <div class="large center">
+        <span class="">FILM</span>
+      </div>
+      <br><br>
+
+      <div class="block sub4 center center-on-max">
+        <i class="material-icons large">videocam</i>
+      </div>
+      <div class="block sub4 center hide-on-limit1">
+        <img src="website/assets/yt_logo_mono_dark.png" width="50%"><p>
+        <a href="https://www.youtube.com/channel/UC49mIcUmHztnqVm9n9aw7kA" class="ffx fx-dark btn enlarge sfx">
+          <span class="medium">YOUTUBE CHANNEL</span>
+        </a>
+      </div>
+      <div class="block sub4 center hide-on-limit1">
+        <div style="background-color: rgb(0,0,0,0.5);padding:7%;">
+          <a href="https://www.youtube.com/watch?v=Ilc5u8k4kWM">
+            <img src="assets/filmproj.gif" class="enlarge" width="100%">
+          </a>
+        </div>
+      </div>
+      <div class="block sub4 center hide-on-limit1">
+        <div class="block sub1 center">
+          Seven years of experience in video editing using Final Cut Pro.
+        </div>
+        <br><br>
+        <div class="block sub1 center">
+          One year of experience in special effects using Adobe After Effects.
+        </div>
+      </div>
+    </div>
+
+    <div class="split"></div>
+
+    <div class="screen blue lighter text-white" style="height:340px;">
+      <br>
+      <div class="large center">
+        <span class="">SOCIAL</span>
+      </div>
+      <br><br>
+
+      <div class="block sub4 center center-on-max">
+        <i class="material-icons large">chat</i>
+      </div>
+      <div class="block sub4 center hide-on-limit1">
+        <a href="https://twitter.com/andremov">
+          <svg xmlns="http://www.w3.org/2000/svg" class="enlarge" width="55%" height="55%" viewBox="0 0 24 24" style="filter: invert(1);">
+            <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10
+            4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373
+            12-12-5.373-12-12-12zm6.5 8.778c-.441.196-.916.328-1.414.388.509-.305.898-.787
+            1.083-1.362-.476.282-1.003.487-1.564.597-.448-.479-1.089-.778-1.796-.778-1.59
+            0-2.758 1.483-2.399 3.023-2.045-.103-3.86-1.083-5.074-2.572-.645 1.106-.334
+            2.554.762 3.287-.403-.013-.782-.124-1.114-.308-.027 1.14.791 2.207 1.975
+            2.445-.346.094-.726.116-1.112.042.313.978 1.224 1.689 2.3 1.709-1.037.812-2.34
+            1.175-3.647 1.021 1.09.699 2.383 1.106 3.773 1.106 4.572 0 7.154-3.861
+            6.998-7.324.482-.346.899-.78 1.229-1.274z"/>
+          </svg>
+        </a>
+      </div>
+      <div class="block sub4 center hide-on-limit1">
+        <a href="https://instagram.com/andremov">
+          <svg xmlns="http://www.w3.org/2000/svg" class="enlarge" width="55%" height="55%" viewBox="0 0 24 24" style="filter: invert(1);">
+            <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10
+            4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373
+            12-12-5.373-12-12-12zm4.615 6h-9.23c-.766 0-1.385.62-1.385 1.384v9.23c0
+            .766.619 1.386 1.385 1.386h9.23c.766 0 1.385-.62 1.385-1.385v-9.23c0-.765-.619-1.385-1.385-1.385zm-4.615
+            3.693c1.274 0 2.309 1.032 2.309 2.307s-1.035 2.307-2.309 2.307-2.307-1.033-2.307-2.307
+            1.033-2.307 2.307-2.307zm4.5 6.346c0 .255-.207.461-.461.461h-8.078c-.254
+            0-.461-.207-.461-.461v-5.039h.949c-.045.158-.078.32-.102.486-.023.168-.038.339-.038.514
+            0 2.04 1.652 3.693 3.691 3.693s3.691-1.653 3.691-3.693c0-.174-.015-.346-.039-.514-.023-.166-.058-.328-.102-.486h.95v5.039zm0-6.991c0
+            .255-.207.462-.461.462h-1.088c-.256 0-.461-.208-.461-.462v-1.087c0-.255.205-.461.461-.461h1.088c.254
+            0 .461.207.461.461v1.087z"/>
+          </svg>
+        </a>
+      </div>
+      <div class="block sub4 center hide-on-limit1">
+        <a href="mailto:amovilla1103@gmail.com">
+          <svg xmlns="http://www.w3.org/2000/svg" class="enlarge" width="55%" height="55%" viewBox="0 0 24 24" style="filter: invert(1);">
+            <path d="M12 2.02c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10
+            4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373
+            12-12-5.373-12-12-12zm0 12.55l-5.992-4.57h11.983l-5.991 4.57zm0
+            1.288l-6-4.629v6.771h12v-6.771l-6 4.629z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="split"></div>
+
 
   </body>
 

@@ -1,0 +1,35 @@
+
+.header {
+  position: sticky;
+  padding-top: 6px;
+  padding-left: 30px;
+  top: 0;
+  height: 4vw;
+  background-color: white;
+  font-size: 2vw;
+  z-index: 10;
+}
+
+.header .large {
+  font-size: 2rem;
+}
+
+.header * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header .filled-button-dark {
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 2px;
+  padding-top: 1px;
+}
+
+.header .head {
+  transition: 0.5s;
+  vertical-align: top;
+  display: inline-block;
+  margin-right: 10px;
+  width: 7%;
+}

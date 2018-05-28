@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!-- PERSONAL PORTFOLIO -->
+<html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Monitoria Algoritmia</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../../website/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="../../website/css/colors.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link rel="icon" href="../../website/assets/icon.png">
+  </head>
+
+  <body>
+    <!--  Scripts-->
+    <script src="https://answer.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="../../website/js/scripts.js"></script>
+    <br><br>
+
+    <h1 class="center">
+      I. Algoritmos Basicos
+    </h1>
+    <br><br>
+
+    <div class="exercise easy">
+      Se desea saber el area de un triangulo, dada su base y altura.
+      <hr>
+      <div class="answer">
+      	Scanner leer = new Scanner(System.in);<br>
+      	double base, altura, area;<br>
+        <br>
+      	System.out.println("Digite la longitud de la base del triangulo.");<br>
+      	base = leer.nextDouble();<br>
+      	System.out.println("Digite la longitud de la altura del triangulo.");<br>
+      	altura = leer.nextDouble();<br>
+        <br>
+      	area = (base * altura) / 2;<br>
+        <br>
+      	System.out.println("El area del triangulo es " + area + ".");<br>
+      </div>
+    </div>
+    <br><br>
+
+    <div class="exercise easy">
+      Se desea saber la longitud de la hipotenusa de un triangulo, dada la longitud
+      de ambos catetos.
+      <hr>
+      <div class="answer">
+      	Scanner leer = new Scanner(System.in);<br>
+      	double cateto1, cateto2, hipotenusa;<br>
+        <br>
+      	System.out.println("Digite la longitud del primer cateto.");<br>
+      	cateto1 = leer.nextDouble();<br>
+      	System.out.println("Digite la longitud del primer cateto.");<br>
+      	cateto2 = leer.nextDouble();<br>
+        <br>
+      	hipotenusa = Math.sqrt(Math.pow(cateto1, 2) + Math.pow(cateto2, 2));<br>
+        <br>
+      	System.out.println("La longitud de la hipotenusa es " + hipotenusa + ".");<br>
+      </div>
+    </div>
+    <br><br>
+
+    <div class="exercise easy">
+      Se desea saber el area y circunferencia de un circulo, dado su radio.
+      <hr>
+      <div class="answer">
+      	Scanner leer = new Scanner(System.in);<br>
+      	double radio, area, circunferencia;<br>
+        <br>
+      	System.out.println("Digite el radio del circulo.");<br>
+      	radio = leer.nextDouble();<br>
+        <br>
+      	area = Math.PI * Math.pow(radio, 2);<br>
+      	circunferencia = 2 * Math.PI * radio;<br>
+        <br>
+      	System.out.println("El area del circulo es " + area + ".");<br>
+      	System.out.println("La circunferencia del circulo es " + circunferencia + ".");<br>
+      </div>
+    </div>
+    <br><br>
+
+    <div class="exercise medium">
+      Se desea saber cuantos meses han transcurrido entre dos fechas.
+      <hr>
+      <div class="answer">
+      	Scanner leer = new Scanner(System.in);<br>
+      	int ano1, ano2, mes1, mes2, distancia;<br>
+        <br>
+      	System.out.println("Digite el año inicial.");<br>
+      	ano1 = leer.nextInt();<br>
+      	System.out.println("Digite el mes inicial.");<br>
+      	mes1 = leer.nextInt();<br>
+      	System.out.println("Digite el año final.");<br>
+      	ano2 = leer.nextInt();<br>
+      	System.out.println("Digite el mes final.");<br>
+      	mes2 = leer.nextInt();<br>
+        <br>
+      	distancia = ((ano2 - ano1) * 12) + (mes2 - mes1);<br>
+        <br>
+      	System.out.println("Las fechas se encuentran a una distancia de " + distancia + " meses entre si.");<br>
+      </div>
+    </div>
+    <br><br>
+
+    <div class="exercise hard">
+      Se desea saber cuantas horas tarda en llenarse un tanque con capacidad de 50
+      metros cubicos, utilizando una manguera de capacidad L litros de agua por
+      minuto.
+      <p>
+      Recuerde que un metro cubico equivale a 1000 litros.
+      <hr>
+      <div class="answer">
+      	Scanner leer = new Scanner(System.in);<br>
+      	double tanque, manguera, minutos, horas;<br>
+        <br>
+      	tanque = 50 * 1000;<br>
+        <br>
+      	System.out.println("Digite la capacidad de la manguera.");<br>
+      	manguera = leer.nextDouble();<br>
+        <br>
+      	minutos = tanque / manguera;<br>
+      	horas = minutos / 60;<br>
+        <br>
+      	System.out.println("Tardaria " + horas + " en llenarse el tanque.");<br>
+      </div>
+    </div>
+    <br><br>
+
+    <div class="exercise hard">
+      Se desea saber cuanto debe pagar un cliente de un sitio de comida rapida,
+      dada la cantidad de gaseosas, perros calientes y hamburguesas pedidas.
+      <p>
+      Precios:<br>
+      Perro Caliente: $5500<br>
+      Hamburguesa: $8000<br>
+      Gaseosa: $2500<br>
+      <hr>
+      <div class="answer">
+      	Scanner leer = new Scanner(System.in);<br>
+      	int perros, gaseosas, hamburguesas, total;<br>
+        <br>
+      	System.out.println("Digite cantidad de perros calientes deseados.");<br>
+      	perros = leer.nextInt();<br>
+      	System.out.println("Digite cantidad de hamburguesas deseadas.");<br>
+      	hamburguesas = leer.nextInt();<br>
+      	System.out.println("Digite cantidad de gaseosas deseadas.");<br>
+      	gaseosas = leer.nextInt();<br>
+        <br>
+      	total = (perros * 5500) + (hamburguesas * 8000) + (gaseosas * 2500);<br>
+        <br>
+      	System.out.println("El total a pagar es " + total + " miles de pesos.");<br>
+      </div>
+    </div>
+    <br><br>
+
+  </body>
+
+</html>
