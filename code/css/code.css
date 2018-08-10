@@ -1,64 +1,89 @@
 
-.filters {
-  margin: auto;
-  background-color: rgb(0, 0, 0, 0.5);
-  margin-bottom: 50px;
-  font-size: 2rem;
-  padding: 10px;
+.container {
+  display: grid;
+  grid-auto-rows: 350px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 350px));
+  place-items: center;
+  place-content: space-around;
 }
 
-.hidden {
-  display: none;
+.card {
+  width: 300px !important;
+  height: 300px !important;
+  overflow: hidden;
+  display: inline-block;
+  transition: 0.5s;
+  transform-style: preserve-3d;
 }
 
-.project {
-  margin-bottom: 40px;
+.card .front, .card .back {
+  width: 300px !important;
+  height: 300px !important;
+  border-radius: 15px;
 }
 
-.project .large {
-  font-size: 2rem;
-}
-
-.project .medium {
-  font-size: 1.5rem;
-}
-
-.project .block {
-  height: 200px;
-}
-
-.project .info {
+.card .front {
+  z-index: 4;
+  background: black;
+  transform: translateY(-100%);
   color: white;
-  background-image: url("../../website/assets/sayagata black.png");
+  overflow: hidden;
+  transition: 0.5s;
+  backface-visibility: hidden;
 }
 
-.crop {
-  height: 200px;
+.card:hover {
+  transform: scale(1.15);
+  filter: drop-shadow( 7px 7px 5px rgba(0, 0, 0, .7));
+}
+
+.card:hover .front {
+  transform: translateY(-100%) rotateY(180deg);
+}
+
+.card .back {
+  background: #333;
+  color: white;
+  transform: rotateY(180deg);
+  transition: 0.5s;
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+
+.card:hover .back {
+  transform: rotateY(0deg);
+}
+
+.card .front .img{
+  height: 80%;
+  width: 100%;
   overflow: hidden;
 }
 
-.project .desc {
-  width: 90%;
-  text-align: justify;
+.card .front .caption{
+  padding: 15px;
+}
+
+.card .front .caption .title {
+  text-align: center;
+  font-size: 24px;
+  margin: 5px;
+}
+
+.card .front .caption .subtitle {
+  text-align: center;
+  font-size: 24px;
+  margin: 0;
+  color: #E4E0C9;
+}
+
+.card .back .title{
+  text-align: center;
+  margin: 25px 0;
+}
+
+.card .back .description {
   padding: 10px;
-  height: 120px;
-}
-
-.project .btn {
-  width: 50%;
-}
-
-hr {
-  color: rgb(255, 255, 255);
-  background-color: rgb(255, 255, 255);
-}
-
-.borders-left {
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-}
-
-.borders-right {
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  font-size: 18px;
+  text-align: justify;
 }

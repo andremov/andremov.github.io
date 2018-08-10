@@ -1,104 +1,72 @@
 
+.container {
+  display: grid;
+  grid-auto-rows: 310px;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 650px));
+  place-items: center;
+  place-content: space-around;
+  grid-row-gap: 50px;
+}
+
 .game {
-  width: 99%;
-  height: 350px;
+  width: 600px;
+  height: 300px;
+
+  margin:auto;
+  margin-bottom: 40px;
+}
+
+.game .img {
+  margin: auto;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.white {
+  background: white;
+}
+
+.black {
+  background: black;
+}
+
+.text-white {
+  color: white;
+}
+
+.game .cutout {
+  position: relative;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 100%;
+  height: 50%;
+}
+
+.game:hover .description {
+  opacity: 1;
+}
+
+.game .description {
+  overflow: hidden;
+  transform: translateY(-100%);
   margin:auto;
   border-radius: 10px;
-  margin-bottom: 40px;
-  overflow: hidden;
-}
-
-.game.bkg {
-  background-image: url("../../website/assets/sayagata black.png");
-}
-
-.game.brown-bkg {
-  background-image: linear-gradient(rgba(200, 130, 30, 0.15),rgba(200, 130, 30, 0.15)),
-                    url("../../website/assets/sayagata black.png");
-}
-
-.game.white-bkg {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.15),rgba(255, 255, 255, 0.15)),
-                    url("../../website/assets/sayagata black.png");
-}
-
-.game.red-bkg {
-  background-image: linear-gradient(rgba(255, 0, 0, 0.15),rgba(255, 0, 0, 0.15)),
-                    url("../../website/assets/sayagata black.png");
-}
-
-
-.game.purple-bkg {
-  background-image: linear-gradient(rgba(255, 0, 255, 0.15),rgba(255, 0, 255, 0.15)),
-                    url("../../website/assets/sayagata black.png");
-}
-
-.game.blue-bkg {
-  background-image: linear-gradient(rgba(0, 0, 255, 0.15),rgba(0, 0, 255, 0.15)),
-                    url("../../website/assets/sayagata black.png");
-}
-
-.game .block-img, .game .block-text {
-  display:inline-block;
-  position: relative;
-}
-
-.game .large {
-  font-size: 2rem;
-}
-
-hr {
-  color: rgb(255, 255, 255);
-  background-color: rgb(255, 255, 255);
-  width: 1000%;
-  position: relative;
-  z-index: 1;
-  transform: translate(-50%, 0);
-}
-
-.game .medium {
-  font-size: 1.5rem;
-}
-
-.game .block-img {
-  width: 59%;
-  overflow: hidden;
+  opacity: 0;
+  transition: 0.2s;
+  width: 100%;
   height: 100%;
-  z-index: 2;
 }
 
-.game .block-img.cut-bottom-right {
-  -webkit-clip-path: polygon(0 0, 0 100%, 80% 100%, 100% 0);
+.game .title {
+  text-align: center;
+  font-size: 21px;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 
-.game .block-img.cut-bottom-left {
-  -webkit-clip-path: polygon(0 0, 20% 100%, 100% 100%, 100% 0);
-}
-
-.game .block-img.cut-top-right {
-  -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 80% 0);
-}
-
-.game .block-img.cut-top-left {
-  -webkit-clip-path: polygon(20% 0, 0 100%, 100% 100%, 100% 0);
-}
-
-.game .btn {
-  width: 50%;
-}
-
-.game .block-text {
-  width: 39%;
-  margin-top: 10px;
-}
-
-.game .desc {
+.game .text {
   text-align: justify;
-  width: 90%;
-  margin-top: 20px;
-  height: 220px;
-}
-
-.game .desc.dog {
-  height: 80px;
 }

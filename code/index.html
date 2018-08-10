@@ -8,245 +8,129 @@
     <title>Andrés Movilla - Code</title>
 
     <!-- CSS  -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="../website/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="../website/css/colors.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="../website/css/header.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/code.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="../website/css/header.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link rel="icon" href="../website/assets/icon.png">
   </head>
 
   <body>
-
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="../website/js/scripts.js"></script>
     <script src="../website/js/header.js"></script>
-    <script src="js/code.js"></script>
 
-    <div class="header">
-      <img class="head center-on-limit2" id="h" src="../website/assets/personal logo.png">
+    <div class="header" id="header-container"></div>
 
-      <div class="hide-on-limit1">
-        <span class="large">Andrés Movilla</span>
-      </div>
+    <div class="container">
 
-      <span class="hide-on-limit1">|</span>
-      <div class="btn ffx fx-dark enlarge">
-        <a href="">CODE</a>
-      </div>
-
-      <span class="hide-on-limit1">|</span>
-      <div class="btn ffx fx-dark enlarge">
-        <a href="../gamedesign">GAME DESIGN</a>
-      </div>
-
-      <span class="hide-on-limit1">|</span>
-      <div class="btn ffx fx-dark enlarge">
-        <a href="../gamedev">GAME DEV</a>
-      </div>
-
-      <span class="hide-on-limit1">|</span>
-      <div class="btn ffx fx-dark enlarge">
-        <a href="../film">FILM</a>
-      </div>
-
-      <span class="hide-on-limit1">|</span>
-      <div class="btn ffx fx-dark right enlarge">
-        <a href="../contact" id="k">CONTACT</a>
-      </div>
-    </div>
-
-    <br><br><br><br><br><br>
-
-    <div class="filters">
-      <div class="center">
-        <div class="block sub2">
-          <div class="btn text-white sfx ffx fx-dark enlarge" id="perBtn">
-            <span class="large">
-              <i class="material-icons small">face</i>
-              <span id="perText">HIDE</span> PERSONAL PROJECTS
-            </span>
-          </div>
-        </div>
-        <div class="block sub2">
-          <div class="btn text-white sfx ffx fx-dark enlarge" id="uniBtn">
-            <span class="large">
-              <i class="material-icons small">account_balance</i>
-              <span id="uniText">HIDE</span> UNIVERSITY PROJECTS
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- JAVA ADIVINADOR -->
-    <div class="project univ">
-      <div class="center large">
-        Java Adivinador
-      </div>
-      <div class="block percent30">
-        <div class="crop borders-right">
-          <img src="assets/adiv.png" style="width: 450px; height: 550px; margin: -40px 0 0 -50px;">
-        </div>
-      </div>
-      <div class="block percent70 info borders-left right">
-        <div class="medium desc center-block">
+    	<div class="card">
+    		<div class="back">
+          <h3 class="title">About</h3>
+          <p class="description">
           Akinator clone. Fourth semester university project for Data Structures
           II course. Program meant to guess any video game/video game series,
           given answers to questions. Also, learns new questions and answers.
+          </p>
         </div>
-        <hr>
-        <a href="adivinador">
-          <div class="center btn ffx fx-white center-block">
-            <span class="medium">GO TO SITE</span>
+
+    		<div class="front">
+          <div class="img">
+            <img src="assets/adiv.png" style="transform: translate(-3%,-1%);">
           </div>
-        </a>
-      </div>
-    </div>
 
-
-    <!-- JAVA POKEMON -->
-    <div class="project univ">
-      <div class="center large">
-        Java Pokemon
-      </div>
-      <div class="block percent70 info borders-right">
-        <div class="medium desc center-block">
-          Pokemon clone. Third semester university project for Object-Oriented
-          Programming course. Capture, collect, battle, and level up Pokemon.
-          Has an expandable map, and its respective region builder.
-        </div>
-        <hr>
-        <a href="pokemon">
-          <div class="center btn ffx fx-white center-block">
-            <span class="medium">GO TO SITE</span>
+          <div class="caption">
+            <h3 class="title">Adivinador</h3>
           </div>
-        </a>
-      </div>
-      <div class="block percent30 right">
-        <div class="crop borders-left black-border">
-          <img src="assets/pkmn.png" style="width: 400px; height: 400px; margin: -50px 0 0 -10px;">
-        </div>
-      </div>
-    </div>
+    		</div>
+    	</div>
 
-
-    <!-- JAVA MONOPOLY -->
-    <div class="project univ">
-      <div class="center large">
-        Java Monopoly
-      </div>
-      <div class="block percent30">
-        <div class="crop borders-right black-border">
-          <img src="assets/mono.png" style="width: 400px; height: 400px; margin: -50px 0 0 -10px;">
+    	<div class="card">
+    		<div class="back">
+          <h3 class="title">About</h3>
+          <p class="description">
+            Pokemon clone. Third semester university project for Object-Oriented
+            Programming course. Capture, collect, battle, and level up Pokemon.
+            Has an expandable map, and its respective region builder.
+          </p>
         </div>
-      </div>
-      <div class="block percent70 info borders-left right">
-          <div class="medium desc center-block">
+
+    		<div class="front">
+          <div class="img">
+            <img src="assets/pkmn.png" style="transform: translate(-35%,-10%);">
+          </div>
+
+          <div class="caption">
+            <h3 class="title">Pokemon</h3>
+          </div>
+    		</div>
+    	</div>
+
+    	<div class="card">
+    		<div class="back">
+          <h3 class="title">About</h3>
+          <p class="description">
             Virtual clone of the famous board game. Third semester university
             project for Data Structures I course. Roll dice, purchase properties,
             buy and sell houses and hotels, mortgage, draw community chest and chance cards.
-          </div>
-        <hr>
-        <a href="monopoly">
-          <div class="center ffx btn fx-white center-block">
-            <span class="medium">GO TO SITE</span>
-          </div>
-        </a>
-      </div>
-    </div>
+          </p>
+        </div>
 
+    		<div class="front">
+          <div class="img">
+            <img src="assets/mono.png" style="transform: translate(-35%,-15%);">
+          </div>
 
-    <!-- JAVA BOMBERMAN -->
-    <div class="project univ">
-      <div class="center large">
-        Java Bomberman
-      </div>
-      <div class="block percent70 info borders-right">
-          <div class="medium desc center-block">
+          <div class="caption">
+            <h3 class="title">Monopoly</h3>
+          </div>
+    		</div>
+    	</div>
+
+    	<div class="card">
+    		<div class="back">
+          <h3 class="title">About</h3>
+          <p class="description">
             Super Bomberman 2 clone. Fourth semester university project for
             Data Structures II course. Local Area Network multiplayer and
             simplified version of Super Bomberman 2's Battle Mode.
-          </div>
-        <hr>
-        <a href="bomberman">
-          <div class="center btn ffx fx-white center-block">
-            <span class="medium">GO TO SITE</span>
-          </div>
-        </a>
-      </div>
-      <div class="block percent30 right">
-        <div class="crop borders-left black-border">
-          <img src="assets/bomb.png" style="width: 400px; height: 400px; margin: -30px 0 0 -10px;">
+          </p>
         </div>
-      </div>
-    </div>
 
+    		<div class="front">
+          <div class="img">
+            <img src="assets/bomb.png" style="transform: translate(-5%,-5%);">
+          </div>
 
-    <!-- GENETIC BATTLE BOTS -->
-    <div class="project pers">
-      <div class="center large">
-        Genetic Battle
-      </div>
-      <div class="block percent30">
-        <div class="crop borders-right">
-          <img src="assets/genb.png" style="width: 400px; height: 400px; margin: -50px 0 0 -10px;">
-        </div>
-      </div>
-      <div class="block percent70 info borders-left right">
-          <div class="medium desc center-block">
+          <div class="caption">
+            <h3 class="title">Bomberman</h3>
+          </div>
+    		</div>
+    	</div>
+
+    	<div class="card">
+    		<div class="back">
+          <h3 class="title">About</h3>
+          <p class="description">
             Personal project. Meant to help the understanding of genetic algorithms,
             as a simple usage of bots built based on a genetic code that battle
             each other.
+          </p>
+        </div>
+
+    		<div class="front">
+          <div class="img">
+            <img src="assets/genb.png" style="transform: translate(-5%,-5%);">
           </div>
-        <hr>
-        <a href="geneticbattle">
-          <div class="center ffx btn fx-white center-block">
-            <span class="medium">GO TO SITE</span>
+
+          <div class="caption">
+            <h3 class="title">Genetic Battle</h3>
           </div>
-        </a>
-      </div>
+    		</div>
+    	</div>
+
     </div>
 
 
-
-    <!-- FIRULAIS -->
-    <!--
-    <div class="col l6 s12">
-      <div class="card style-color-blue lighter  hoverable">
-        <div class="card-content white-text">
-          <span class="card-title">Firulais</span>
-          <p>University project. Website meant to aid the search for lost dogs,
-             improve experience for dog adoption on both sides of transaction.
-             Entrepreneurship project, partnered with a friend, the project leader.</p>
-        </div>
-        <div class="card-action">
-          <a href="Firulais" class="style-color-blue darkest">GO TO SITE</a>
-        </div>
-      </div>
-    </div>
-    -->
-
-
-<!--
-    <footer class="page-footer grey lighten-2">
-
-      <div class="container">
-          <div class="center">
-            <a  href="http://www.cub3dgames.com/"><img src="resources_website/company logo.png"></a>
-          </div>
-      </div>
-
-      <div class="footer-copyright">
-        <div class="container">
-        Made by <a class="black-text text-lighten-3" href="https://andremov.github.io/">Andrés Movilla</a>
-        </div>
-      </div>
-
-    </footer>
--->
   </body>
 
 </html>

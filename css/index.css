@@ -1,28 +1,129 @@
+body {
+    font-size: 18px;
+    background-image: url("../website/assets/runes_black.png");
+}
 
-.screen {
-  display: block;
-  width: 100%;
+.purple {
+ background: #5600A0;
+}
+
+.red {
+ background: #A00800;
+}
+
+.black {
+  background: black;
+}
+
+.white {
+ background: white;
+}
+
+.blue {
+  background: #436DD5;
+}
+
+.text-white {
+  color: white;
 }
 
 .right {
   margin-right: 20px;
 }
 
-.large {
-  font-size: 2.75vw;
+.list {
+  list-style-type: none;
 }
 
-.medium {
-  font-size: 2vw;
+.container {
+  display: grid;
+  grid-auto-rows: 70px;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 70px));
+  place-items: center;
+  place-content: center;
 }
 
-.body {
-  text-align: justify;
-  font-size: 1.5vw;
+.icon {
+  transition: 0.5s;
+  fill: #fff;
+  opacity: 0.35;
+}
+
+.icon:hover {
+  transform: scale(1.15);
+  filter: drop-shadow( 3px 3px 3px rgba(0, 0, 0, .7));
+  opacity: 1;
 }
 
 .split {
-  height: 20px;
-  background-image: url("../website/assets/sayagata black.png");
-  filter:brightness(2);
+  height: 60px;
+}
+
+.caret {
+  animation: caret-fade infinite 1s;
+  transform: translate(0,10%);
+  fill:white;
+}
+
+@keyframes caret-fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.section-block {
+  display: block;
+  text-align: center;
+  width: 600px;
+  margin:auto;
+  padding: 15px;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  transition: 0.25s;
+}
+
+.section-block:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 700px) {
+  .section-block {
+    width: 100%;
+    padding: 0px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    border-radius: 0px;
+  }
+}
+
+.head {
+  opacity: 0.1;
+  transition: 0.5s;
+  width: 100px;
+  display: block;
+  margin: auto;
+}
+
+.head:hover {
+  opacity: 1;
+}
+
+.head .face {
+  fill:#fff;
+}
+
+.head .circle {
+  fill: #333;
+  transition: 0.5s;
+}
+
+.head:hover .circle {
+  fill: #7100d3;
 }

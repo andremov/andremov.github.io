@@ -8,11 +8,9 @@
     <title>Andrés Movilla - Game Design</title>
 
     <!-- CSS  -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="../website/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="../website/css/colors.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="../website/css/header.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/gamedesign.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="../website/css/header.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link rel="icon" href="../website/assets/icon.png">
   </head>
 
@@ -20,69 +18,76 @@
 
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="../website/js/scripts.js"></script>
     <script src="../website/js/header.js"></script>
-    <script src="js/gamedesign.js"></script>
 
-        <div class="header">
-          <img class="head center-on-limit2" id="h" src="../website/assets/personal logo.png">
+    <div class="header" id="header-container"></div>
 
-          <div class="hide-on-limit1">
-            <span class="large">Andrés Movilla</span>
+    <div class="container">
+      <!-- GGJ 2018 -->
+      <div class="game">
+
+        <div class="card-description">
+
+          <div class="arrow">
+            <svg width="15" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 30">
+              <polygon points="15 0 15 30 0 15 15 0"></polygon>
+            </svg>
           </div>
 
-          <span class="hide-on-limit1">|</span>
-          <div class="btn ffx fx-dark enlarge">
-            <a href="../code">CODE</a>
-          </div>
+          <div class='left'></div>
 
-          <span class="hide-on-limit1">|</span>
-          <div class="btn ffx fx-dark enlarge">
-            <a href="">GAME DESIGN</a>
-          </div>
-
-          <span class="hide-on-limit1">|</span>
-          <div class="btn ffx fx-dark enlarge">
-            <a href="../gamedev">GAME DEV</a>
-          </div>
-
-          <span class="hide-on-limit1">|</span>
-          <div class="btn ffx fx-dark enlarge">
-            <a href="../film">FILM</a>
-          </div>
-
-          <span class="hide-on-limit1">|</span>
-          <div class="btn ffx fx-dark right enlarge">
-            <a href="../contact" id="k">CONTACT</a>
-          </div>
-        </div>
-
-        <br><br><br><br><br><br>
-
-
-        <!-- GGJ 2018 -->
-        <div class="game text-white green-bkg">
-          <div class="block-img cut-top-right">
-            <img src="assets/nabu.png" width="100%">
-          </div>
-          <div class="block-text right">
-            <div class="center large">
-              Nabu
-            </div>
-            <div class="desc center-block">
+          <div class="description">
+            <div class="text">
               Global Game Jam 2018 entry. Infiltration game, with the main character
-              having the ability to hack into the network mainframe until you
-              reach the captain's room..
+              having the ability to hack into the network mainframe to
+              reach the captain's room.
             </div>
-            <hr>
-            <a href="https://globalgamejam.org/2018/games/nabu">
-              <div class="center btn ffx fx-white center-block">
-                <span class="medium">GO TO SITE</span>
-              </div>
+
+            <a class="btn" href="https://globalgamejam.org/2018/games/nabu">
+              GO TO SITE
             </a>
           </div>
         </div>
 
+        <div class="card-img">
+          <img src="assets/nabu.png" width="100%">
+        </div>
+
+      </div>
+
+      <!-- GGJ 2019 -->
+      <div class="game">
+
+      <div class="card-description">
+
+        <div class="arrow">
+          <svg width="15" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 30">
+            <polygon points="15 0 15 30 0 15 15 0"></polygon>
+          </svg>
+        </div>
+
+        <div class='left'></div>
+
+        <div class="description">
+          <div class="text">
+            Global Game Jam 2019 entry. A robot in a post-apocalyptic world searches
+             for parts to fix a door mechanism to reunite with its family. Fix door.
+             Contact Home.
+          </div>
+          <a class="btn" href="https://globalgamejam.org/2019/games/high-output-mechanical-engagement">
+            GO TO SITE
+          </a>
+        </div>
+
+      </div>
+
+      <div class="card-img">
+        <img src="assets/home.jpg " style="transform:translateY(-15%);" width="100%">
+      </div>
+
+    </div>
+  </div>
+  
   </body>
 
 </html>

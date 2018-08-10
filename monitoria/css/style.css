@@ -7,6 +7,17 @@
   font-size: 1.1rem;
 }
 
+.help {
+    display: block;
+    font-family: 'RobotoMono';
+    background-color: white;
+    margin: auto;
+    padding: 40px;
+    text-align: left;
+    padding-left: 90px;
+    font-size: 1.2rem;
+}
+
 .exercise.hard {
   background-color: #f44336;
 }
