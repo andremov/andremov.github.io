@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio-minimalist/static/css/main.f1e8a8d3.css",
+    "main.css": "/portfolio-minimalist/static/css/main.e15e8f9f.css",
     "main.js": "/portfolio-minimalist/static/js/main.e8922d4d.js",
     "static/media/github.svg": "/portfolio-minimalist/static/media/github.ca395b70c42d82c28b4f.svg",
     "static/media/envelope.svg": "/portfolio-minimalist/static/media/envelope.bd9b93d2d34a856ff48b.svg",
@@ -10,11 +10,11 @@
     "static/media/close.svg": "/portfolio-minimalist/static/media/close.ae469738e479d31aa952.svg",
     "static/media/blob3.svg": "/portfolio-minimalist/static/media/blob3.23fd94d61493c366bb46.svg",
     "static/media/logo2.svg": "/portfolio-minimalist/static/media/logo2.45fc0f20abd22bcc266a.svg",
-    "main.f1e8a8d3.css.map": "/portfolio-minimalist/static/css/main.f1e8a8d3.css.map",
+    "main.e15e8f9f.css.map": "/portfolio-minimalist/static/css/main.e15e8f9f.css.map",
     "main.e8922d4d.js.map": "/portfolio-minimalist/static/js/main.e8922d4d.js.map"
   },
   "entrypoints": [
-    "static/css/main.f1e8a8d3.css",
+    "static/css/main.e15e8f9f.css",
     "static/js/main.e8922d4d.js"
   ]
 }
