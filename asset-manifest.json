@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio-minimalist/static/css/main.ab9989cb.css",
-    "main.js": "/portfolio-minimalist/static/js/main.99497a7f.js",
-    "static/media/github.svg": "/portfolio-minimalist/static/media/github.ca395b70c42d82c28b4f.svg",
-    "static/media/envelope.svg": "/portfolio-minimalist/static/media/envelope.bd9b93d2d34a856ff48b.svg",
-    "static/media/pdf.svg": "/portfolio-minimalist/static/media/pdf.ffc0851df91f68e1ba02.svg",
-    "static/media/linkedin.svg": "/portfolio-minimalist/static/media/linkedin.e86a25febc03a915ee8d.svg",
-    "static/media/download.svg": "/portfolio-minimalist/static/media/download.499e57d469e4569b3cd7.svg",
-    "static/media/close.svg": "/portfolio-minimalist/static/media/close.ae469738e479d31aa952.svg",
-    "index.html": "/portfolio-minimalist/index.html",
-    "static/media/blob3.svg": "/portfolio-minimalist/static/media/blob3.23fd94d61493c366bb46.svg",
-    "static/media/check.svg": "/portfolio-minimalist/static/media/check.d77a6106b69459fb02fa.svg",
-    "static/media/logo2.svg": "/portfolio-minimalist/static/media/logo2.45fc0f20abd22bcc266a.svg",
-    "main.ab9989cb.css.map": "/portfolio-minimalist/static/css/main.ab9989cb.css.map",
-    "main.99497a7f.js.map": "/portfolio-minimalist/static/js/main.99497a7f.js.map"
+    "main.css": "/static/css/main.ab9989cb.css",
+    "main.js": "/static/js/main.99497a7f.js",
+    "static/media/github.svg": "/static/media/github.ca395b70c42d82c28b4f.svg",
+    "static/media/envelope.svg": "/static/media/envelope.bd9b93d2d34a856ff48b.svg",
+    "static/media/pdf.svg": "/static/media/pdf.ffc0851df91f68e1ba02.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.e86a25febc03a915ee8d.svg",
+    "static/media/download.svg": "/static/media/download.499e57d469e4569b3cd7.svg",
+    "static/media/close.svg": "/static/media/close.ae469738e479d31aa952.svg",
+    "index.html": "/index.html",
+    "static/media/blob3.svg": "/static/media/blob3.23fd94d61493c366bb46.svg",
+    "static/media/check.svg": "/static/media/check.d77a6106b69459fb02fa.svg",
+    "static/media/logo2.svg": "/static/media/logo2.45fc0f20abd22bcc266a.svg",
+    "main.ab9989cb.css.map": "/static/css/main.ab9989cb.css.map",
+    "main.99497a7f.js.map": "/static/js/main.99497a7f.js.map"
   },
   "entrypoints": [
     "static/css/main.ab9989cb.css",
