@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://v8.andremov.dev/sitemap-index.xml
